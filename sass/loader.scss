@@ -1,0 +1,46 @@
+@import "functions/mixin";
+.loader-section {
+	position: fixed;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	@include opacity(1);
+
+	&.close-loader{
+
+		@include transition(all 0.5s ease-out 1.5s);
+		@include opacity(0);
+		.loader-center .loader-effect{
+			@include transition(height 0.7s ease 0.5s);
+			height: 100%;
+		}
+	}
+
+	.loader-center {
+
+		@include absolute-center();
+
+		.loader-effect {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0;
+			@include absolute-hidden();
+
+			img{
+				position: absolute;
+				bottom:0;
+				left:0;
+			}
+		}
+	}
+}
+
+.loading-body {
+	overflow-y: hidden;
+}

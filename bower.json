@@ -1,0 +1,26 @@
+{
+  "name": "standard-theme",
+  "authors": [
+    "djkarui <alexandru.andries@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "angular-cookies": "~1.4.0",
+    "angular-load": "~0.2.0",
+    "angular-bootstrap": "~1.1.0",
+    "angular-material": "~1.0.3",
+    "bootstrap": "^3.3.6",
+    "ngstorage": "^0.3.10",
+    "angular-resource": "^1.5.0",
+    "angular-loading-bar": "^0.8.0"
+  }
+}
