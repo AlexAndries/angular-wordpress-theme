@@ -93,7 +93,7 @@ function ultra_logo_url(){
 	$logourl = "";
 	if(isset($ultraadmin['logo-url']) && trim($ultraadmin['logo-url']) != ""){
 		$logourl = $ultraadmin['logo-url'];
-		echo "<style type='text/css' id='ultra-logo-url'> #adminmenuwrap .logo-overlay { cursor:hand;cursor:pointer; }</style>";
+		echo "<style type='text/css' id='ultra-logo-url'> #adminmenuwrap .logo-overlay {display: none; cursor:hand;cursor:pointer; }</style>";
 	}
 	echo "<meta type='info' id='ultra-logourl' data-value='" . $logourl . "'>";
 }

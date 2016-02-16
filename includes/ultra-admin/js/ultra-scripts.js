@@ -7,45 +7,36 @@ jQuery(function($){
 	ULTRA_SETTINGS.menuResizer = function(){
 		var menuWidth = $("#adminmenuwrap").width();
 		if($("#adminmenuwrap").is(":hidden")){
-			$("body").addClass("menu-hidden");
-			$("body").removeClass("menu-expanded");
-			$("body").removeClass("menu-collapsed");
+			$("body").addClass("menu-hidden")
+				.removeClass("menu-expanded")
+				.removeClass("menu-collapsed");
 		}
 		else if(menuWidth > 46){
-			$("body").addClass("menu-expanded");
-			$("body").removeClass("menu-hidden");
-			$("body").removeClass("menu-collapsed");
+			$("body").addClass("menu-expanded")
+				.removeClass("menu-hidden")
+				.removeClass("menu-collapsed");
 		}else{
-			$("body").addClass("menu-collapsed");
-			$("body").removeClass("menu-expanded");
-			$("body").removeClass("menu-hidden");
+			$("body").addClass("menu-collapsed")
+				.removeClass("menu-expanded")
+				.removeClass("menu-hidden");
 		}
 	};
 	ULTRA_SETTINGS.menuClickResize = function(){
 		$('#collapse-menu, #wp-admin-bar-menu-toggle').click(function(e){
 			var menuWidth = $("#adminmenuwrap").width();
 			if($("#adminmenuwrap").is(":hidden")){
-				$("body").addClass("menu-hidden");
-				$("body").removeClass("menu-expanded");
-				$("body").removeClass("menu-collapsed");
+				$("body").addClass("menu-hidden")
+					.removeClass("menu-expanded")
+					.removeClass("menu-collapsed");
 			}
 			else if(menuWidth > 46){
-				$("body").addClass("menu-expanded");
-				$("body").removeClass("menu-hidden");
-				$("body").removeClass("menu-collapsed");
+				$("body").addClass("menu-expanded")
+					.removeClass("menu-hidden")
+					.removeClass("menu-collapsed");
 			}else{
-				$("body").addClass("menu-collapsed");
-				$("body").removeClass("menu-expanded");
-				$("body").removeClass("menu-hidden");
-			}
-		});
-	};
-	ULTRA_SETTINGS.logoURL = function(){
-		$("#adminmenuwrap").prepend("<div class='logo-overlay'></div>");
-		$('#adminmenuwrap .logo-overlay').click(function(e){
-			var logourl = $("#ultra-logourl").attr("data-value");
-			if(logourl != ""){
-				window.location = logourl;
+				$("body").addClass("menu-collapsed")
+					.removeClass("menu-expanded")
+					.removeClass("menu-hidden");
 			}
 		});
 	};
@@ -179,7 +170,6 @@ jQuery(function($){
 	$(document).ready(function(){
 		ULTRA_SETTINGS.menuResizer();
 		ULTRA_SETTINGS.menuClickResize();
-		ULTRA_SETTINGS.logoURL();
 		ULTRA_SETTINGS.menuToggle();
 		ULTRA_SETTINGS.saveMenu();
 		ULTRA_SETTINGS.menuDisplay();

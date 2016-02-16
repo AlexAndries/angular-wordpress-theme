@@ -456,6 +456,7 @@ div.wp-menu-image:before {
 /* ------------ Menu Top Logo ----------- */
 #adminmenuwrap .logo-overlay {
 	margin-top: -23px;
+	display: none !important;
 }
 
 #adminmenuwrap .logo-overlay {
@@ -483,6 +484,7 @@ div.wp-menu-image:before {
 
 #adminmenuwrap:before {
 	background-image: url("../images/logo.png");
+	content:none;
 }
 
 .folded #adminmenuwrap:before {

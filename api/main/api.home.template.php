@@ -146,7 +146,7 @@ function home_template_api(){
 			$info[]=$currentPress;
 		}
 		wp_reset_postdata();
-		$data['blog']=array(
+		$data['news']=array(
 			'title'=>get_field('press_title',$page),
 			'data'=>$info
 		);
